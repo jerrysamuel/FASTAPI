@@ -186,3 +186,7 @@ def logout_user(response: Response):
     response.delete_cookie(key="session_token")
     response.delete_cookie(key="session_user")
     return {"message": "Logged out successfully"}
+
+@app.get("/ping")
+def ping():
+    return {"message": "pong"}
