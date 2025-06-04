@@ -20,3 +20,6 @@ starlette==0.46.1
 typing_extensions==4.12.2
 uvicorn[standard]
 wrapt==1.17.2
+sqlalchemy
+psycopg2-binary
+python-dotenv 
