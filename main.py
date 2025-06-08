@@ -30,7 +30,7 @@ app.state.limiter = limiter
 app.add_exception_handler(429, _rate_limit_exceeded_handler)
 
 # CORS Setup
-origins = ["http://localhost", "http://localhost:3000", "http://localhost:5173", "http://172.20"]
+origins = ["http://localhost", "http://localhost:3000", "http://localhost:5173", "https://puzzledsign.onrender.com"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
